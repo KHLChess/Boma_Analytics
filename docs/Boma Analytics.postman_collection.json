@@ -205,7 +205,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzk0NTEyLCJleHAiOjE3NDM3OTgxMTJ9.svvdc9N_edhlWbAQ7uhd1l-qkkMrPnlSvUjMxJzGIrM",
 							"type": "string"
 						}
 					]
@@ -235,7 +235,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzk0NTEyLCJleHAiOjE3NDM3OTgxMTJ9.svvdc9N_edhlWbAQ7uhd1l-qkkMrPnlSvUjMxJzGIrM",
 							"type": "string"
 						}
 					]
@@ -352,7 +352,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzk0NTEyLCJleHAiOjE3NDM3OTgxMTJ9.svvdc9N_edhlWbAQ7uhd1l-qkkMrPnlSvUjMxJzGIrM",
 							"type": "string"
 						}
 					]
@@ -430,7 +430,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU1MjAyLCJleHAiOjE3NDM3NTg4MDJ9.2jtnNVVwlZDOYMQZ8hu7fiW192heTYqWVYKFUuv_GaQ",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzk0NTEyLCJleHAiOjE3NDM3OTgxMTJ9.svvdc9N_edhlWbAQ7uhd1l-qkkMrPnlSvUjMxJzGIrM",
 							"type": "string"
 						}
 					]
@@ -460,7 +460,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU2MDEyLCJleHAiOjE3NDM3NTk2MTJ9.XCji619-W8zO14fXyKxyPKFY-m6T4zDFbo8EDwU4W68",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzk0NTEyLCJleHAiOjE3NDM3OTgxMTJ9.svvdc9N_edhlWbAQ7uhd1l-qkkMrPnlSvUjMxJzGIrM",
 							"type": "string"
 						}
 					]
