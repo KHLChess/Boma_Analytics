@@ -1,7 +1,5 @@
 package com.bomaanalytics.service;
 
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,13 +30,7 @@ public class CampaniasService {
 	}
 
 	public List<Campanias> getAllCampanias() {
-    	List<Campanias> findCampanias = campaniasRepository.findAll();
-    	
-    	if(!findCampanias.isEmpty()) {
-    		return findCampanias;
-    	}else {
-    		throw new CampaniaAlredyExistException("Lista Vacia");
-    	}
+    	return campaniasRepository.findAll();
     }
 	
 	public List<Campanias> getCampaniasByStatus(Status status){
@@ -50,7 +42,7 @@ public class CampaniasService {
 			if(!campanias.isEmpty()){
 				return campanias;
 			}else {
-				throw new CampaniaAlredyExistException("Campania no encontrada");
+				return List.of();
 			}
 		}
 		
@@ -59,7 +51,7 @@ public class CampaniasService {
 			if(!campanias.isEmpty()){
 				return campanias;
 			}else {
-				throw new CampaniaAlredyExistException("Campania no encontrada");
+				return List.of();
 			}
 		}
 		
@@ -68,7 +60,7 @@ public class CampaniasService {
 			if(!campanias.isEmpty()){
 				return campanias;
 			}else {
-				throw new CampaniaAlredyExistException("Campania no encontrada");
+				return List.of();
 			}
 		}
 		

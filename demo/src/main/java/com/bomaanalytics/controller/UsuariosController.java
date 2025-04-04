@@ -42,20 +42,18 @@ public class UsuariosController {
 	@PreAuthorize("hasRole('ROLE_SUPER_ADMIN')")
 	@GetMapping("/users")
 	public ResponseEntity<?> getAllUsers() {
-		List<Usuarios> request = usuariosService.listUsuarios();
-		try {
-			if (!request.isEmpty()) {
-				return new ResponseEntity<Object>(request, HttpStatus.OK);
-			} else {
-				return new ResponseEntity<Object>(request, HttpStatus.NOT_FOUND);
-			}
-
-		} catch (Exception e) {
-			// TODO: handle exception
-			return new ResponseEntity<Object>("message: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-
+	    try {
+	        List<Usuarios> request = usuariosService.listUsuarios();
+	        if (request.isEmpty()) {
+	            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se encontraron usuarios");
+	        }
+	        return ResponseEntity.ok(request);
+	    } catch (Exception e) {
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+	                             .body(Map.of("error", "Error interno del servidor", "message", e.getMessage()));
+	    }
 	}
+
 
 	@PreAuthorize("hasRole('ROLE_SUPER_ADMIN')")
 	@PostMapping("/register")

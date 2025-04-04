@@ -20,6 +20,8 @@ public class UsuariosService {
 	
 	@Autowired
 	PasswordEncoder passwordEncoder;
+	
+	
 
 	
 	public List<Usuarios> listUsuarios() {
