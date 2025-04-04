@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "779a7923-4602-442e-9836-d9001f5757bd",
+		"name": "Boma Analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19928030"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/usuarios/all",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rfc\": \"LOLK900501GP2\",\r\n    \"password\": \"010590\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3MzkwNzYsImV4cCI6MTc0Mzc0MjY3Nn0.kHN09oBCGigDDDdrmm9Fst6Tnx8PJY7IyYnT05qQgtI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rfc\" : \"LOLK900501GP2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3NDcxMzEsImV4cCI6MTc0Mzc1MDczMX0._6KTC7CPDB-fSOc2GsOIZzbYk66z-6-BdL0VCZQA8PM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\": \"karim lopez\",\r\n    \"password\": \"010590\",\r\n    \"rfc\": \"lolk900501gp2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/updated-users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3NDI0NzQsImV4cCI6MTc0Mzc0NjA3NH0.m1TRvchFl_Scli_N2ZFB2BYhNs_6r_ZwhHF6NYVuYqU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\": \"karim heriberto lopez\",\r\n    \"password\": \"010590\",\r\n    \"rfc\": \"lolk900501gp2\",\r\n    \"tipoUsuario\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/updated-users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"updated-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/delete-users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3NDI0NzQsImV4cCI6MTc0Mzc0NjA3NH0.m1TRvchFl_Scli_N2ZFB2BYhNs_6r_ZwhHF6NYVuYqU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rfc\": \"lolk900501gp2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/delete-users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"delete-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/campanias/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/find-by-name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreCampania\": \"Expo Feria 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/find-by-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"find-by-name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzUzODk0LCJleHAiOjE3NDM3NTc0OTR9.D94gGv5kWhopX4rVUvd_lViSF6le2fOx-Hf-tDr2S34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreCampania\": \"Mecanica 2025\",\r\n\t\"descripcion\": \"Mecanica y mas\",\r\n\t\"fechaInicio\": \"2025-04-18\",\r\n\t\"fechaFinal\": \"2025-04-28\",\t\r\n\t\"tipoCampania\": \"promocional\",\r\n\t\"presupuesto\": 35000,\r\n\t\"tipoCanal\": \"redes sociales\", \r\n\t\"resultadoEsperado\": \"diversion familiar\",\r\n\t\"observaciones\": \"todo ok\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzUzODk0LCJleHAiOjE3NDM3NTc0OTR9.D94gGv5kWhopX4rVUvd_lViSF6le2fOx-Hf-tDr2S34",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreCampania\": \"Astrologia 2025\",\r\n\t\"descripcion\": \"Astro\",\r\n\t\"fechaInicio\": \"2025-04-18\",\r\n\t\"fechaFinal\": \"2025-04-28\",\t\r\n\t\"tipoCampania\": \"promocional\",\r\n\t\"presupuesto\": 35000,\r\n\t\"tipoCanal\": \"redes sociales\", \r\n\t\"resultadoEsperado\": \"diversion familiar\",\r\n\t\"observaciones\": \"todo ok\",\r\n    \"statusCampania\": \"FINALIZADA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/filter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU0NTY5LCJleHAiOjE3NDM3NTgxNjl9.88SL-YkTzWao7rzGDPGHu66-UycAwjggrZL2lmbcweg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"statusCampania\": \"ACTIVA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3NTI2OTcsImV4cCI6MTc0Mzc1NjI5N30.7CXYGSpv1nDQYNklnee8cRucBbU58JwEvZoYWQBwkdo\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreCampania\": \"Expo Feria 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/dashboard",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU1MjAyLCJleHAiOjE3NDM3NTg4MDJ9.2jtnNVVwlZDOYMQZ8hu7fiW192heTYqWVYKFUuv_GaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/campanias/dashboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/campanias/landing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJMT0xLOTAwNTAxR1AyIiwiaWF0IjoxNzQzNzU2MDEyLCJleHAiOjE3NDM3NTk2MTJ9.XCji619-W8zO14fXyKxyPKFY-m6T4zDFbo8EDwU4W68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreCampania\" : \"Torneo Ajedrez 2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/campanias/landing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campanias",
+						"landing"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
