@@ -127,7 +127,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3NDI0NzQsImV4cCI6MTc0Mzc0NjA3NH0.m1TRvchFl_Scli_N2ZFB2BYhNs_6r_ZwhHF6NYVuYqU",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiU1VQRVJfQURNSU4iLCJzdWIiOiJST09UMjUiLCJpYXQiOjE3NDM3OTY2NDUsImV4cCI6MTc0MzgwMDI0NX0.Kd7f5z0mfERN-bv3Z7VB2WPaAXey6SbR6lS4CUmsDpM",
 							"type": "string"
 						}
 					]
@@ -136,7 +136,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombreUsuario\": \"karim heriberto lopez\",\r\n    \"password\": \"010590\",\r\n    \"rfc\": \"lolk900501gp2\",\r\n    \"tipoUsuario\": \"ADMIN\"\r\n}",
+					"raw": "{\r\n    \"nombreUsuario\": \"jesus ernesto lopez\",\r\n    \"password\": \"190595\",\r\n    \"rfc\": \"LOLJ950519HS1\",\r\n    \"tipoUsuario\" : \"ADMIN\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
