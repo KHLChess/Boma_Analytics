@@ -96,7 +96,7 @@ Esta API permite gestionar campañas de marketing, obteniendo métricas y genera
 Para facilitar las pruebas, se ha exportado una colección de Postman con todas las solicitudes necesarias.
 
 Descargar la colección:
-[Postman Collection](./docs/boma-analytics.postman_collection.json)
+[Postman Collection](https://github.com/KHLChess/Boma_Analytics/raw/main/docs/boma-analytics.postman_collection.json)
 
 ---
 
