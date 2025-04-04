@@ -12,7 +12,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "campanias")
@@ -23,9 +26,7 @@ public class Campanias {
 	private Long idCampania;
 	private String nombreCampania;
 	private String descripcion;
-	private Date fechaCreacion;
 	private Date fechaInicio;
-	private Date fechaActualizacion;
 	private Date fechaFinal;	
 	private String tipoCampania;
 	private Double presupuesto;
@@ -35,8 +36,14 @@ public class Campanias {
 	
 	@ManyToOne
 	@JsonIgnore
-	@JoinColumn(name = "id_usuario", nullable = false)
+	@JoinColumn(name = "rfc_usuario", nullable = false)
 	private Usuarios usuarios;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date fechaCreacion;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date fechaActualizacion;
 	
 	@Enumerated(EnumType.STRING)
 	private Status statusCampania; //indica si se encuentra activo, inactivo o completada
@@ -44,6 +51,12 @@ public class Campanias {
 	public enum Status {
 		ACTIVA, PAUSADA, FINALIZADA
 	}
+	
+	@PrePersist
+    protected void onCreate() {
+        this.fechaCreacion = new Date();
+        this.fechaActualizacion = new Date();
+    }
 	
 	public Campanias() {
 		super();
